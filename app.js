@@ -5,7 +5,8 @@ var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 // var serverURL = "https://api.funtranslations.com/translate/minion.json"
 
 function getTransationURL(text) {
-    return serverURL+"?=text"+text
+    console.log(serverURL+"?"+"text="+text);
+    return serverURL+"?"+"text="+text
 }
 
 function clickHandler() {
@@ -18,4 +19,3 @@ function clickHandler() {
 
 btnTranslate.addEventListener("click",clickHandler);
 
-// json =>outputDiv.innerText=json.contents.translation
